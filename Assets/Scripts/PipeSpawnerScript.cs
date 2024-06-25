@@ -24,7 +24,6 @@ public class PipeSpawnerScript : MonoBehaviour
         {
             spawnPipe();
             timer = 0;
-            if (timer < timeTilDeath);
         }
         
     }
@@ -32,7 +31,7 @@ public class PipeSpawnerScript : MonoBehaviour
     {
         float lowestPoint = transform.position.y - heightOffset;
         float highestPoint = transform.position.y + heightOffset;
-        Instantiate(Pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0) transform.rotation);
+        Instantiate(Pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
     }
     
 }

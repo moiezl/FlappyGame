@@ -24,6 +24,7 @@ public class PipeSpawnerScript : MonoBehaviour
         {
             spawnPipe();
             timer = 0;
+            if (timer < timeTilDeath);
         }
         
     }
